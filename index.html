@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- yy documentation hy fancybox ki-------http://127.0.0.1:5501/fancybox-master/docs/index.html-----  -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightbox Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- ----------------fancybox min.css----------- -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- -------------------------jquery link------------- -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- ----------------fancybox min.js----------- -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+
+
+        $(document).ready(function () {
+            $('[data-fancybox="gallery"]').fancybox({
+                buttons: [
+                    'slideShow',
+                    'share',
+                    'zoom',
+                    'fullScreen',
+                    'close',
+                    ]
+            });
+        });
+    </script>
+
+    <style>
+        .gallery {
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 1%;
+        }
+
+        .header {
+            height: 170px;
+        }
+
+        .header>img {
+            width: 350px;
+            margin-left: 35%;
+            margin-top: 1%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header"> <img src="./image/company_logo.png" alt="">
+        <h2 style="margin-top: -8px; font-size:39px; text-align: center;">Our Projects</h2>
+    </div>
+
+    <div class="gallery">
+        <a href="./image/image (6).jpg" data-fancybox="gallery" data-caption="Image 1">
+            <img style="width: 250px; height: 200px;object-fit: cover;" src="./image/image (6).jpg" alt="Image 1">
+        </a>
+
+        <a href="./image/image (7).jpg" data-fancybox="gallery" data-caption="Image 2">
+            <img style="width: 250px; height: 200px;object-fit: cover;" src="./image/image (7).jpg" alt="Image 1">
+        </a>
+
+        <a href="./image/image (8).jpg" data-fancybox="gallery" data-caption="Image 3">
+            <img style="width: 250px; height: 200px;object-fit: cover;" src="./image/image (8).jpg" alt="Image 1">
+        </a>
+
+        <a href="./image/image (9).jpg" data-fancybox="gallery" data-caption="Image 4">
+            <img style="width: 250px; height: 200px;object-fit: cover;" src="./image/image (9).jpg" alt="Image 1">
+        </a>
+
+        <a href="./image/image (10).jpg" data-fancybox="gallery" data-caption="Image 5">
+            <img style="width: 250px; height: 200px;object-fit: cover;" src="./image/image (10).jpg" alt="Image 1">
+        </a>
+
+        <a href="./image/image (11).jpg" data-fancybox="gallery" data-caption="Image 6">
+            <img style="width: 250px; height: 200px;object-fit: cover;" src="./image/image (11).jpg" alt="Image 1">
+        </a>
+
+        <a href="./image/image (12).jpg" data-fancybox="gallery" data-caption="Image 7">
+            <img style="width: 250px; height: 200px;object-fit: cover;" src="./image/image (12).jpg" alt="Image 1">
+        </a>
+
+        <a href="./image/image (13).jpg" data-fancybox="gallery" data-caption="Image 8">
+            <img style="width: 250px; height: 200px;object-fit: cover;" src="./image/image (13).jpg" alt="Image 1">
+        </a>
+
+    </div>
+</body>
+
+</html>
